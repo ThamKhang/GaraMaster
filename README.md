@@ -6,7 +6,7 @@
 1. **Nguyễn Trọng Nam** - Trưởng nhóm - [GitHub](https://namnguyen0903.github.io/)    
 2. **Trần Thẩm Khang** - Thành viên - [GitHub](https://thamkhang.github.io/)  
 3. **Nguyễn Hồng Phúc** - Thành viên - [GitHub](https://thongocxd.github.io/)    
-4. **Nguyễn Hồng Phúc** - Thành viên - [GitHub](https://thongocxd.github.io/)    
+4. **Võ Văn Nhân** - Thành viên - [GitHub](https://nhanvatttranh.github.io/)    
 
 ---
 
