@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load widget_tweaks %}
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <style media="screen">
+        ::placeholder {
+            color: rgb(50, 250, 250);
+            opacity: 1;
+        }
+
+        .input-file {
+            display: none;
+        }
+
+        .input-btn {
+            background-color: #0b0be7;
+            color: rgb(62, 211, 231);
+            border: 1px solid #8c8c8c;
+            padding: 5px;
+            border-radius: 6px;
+            box-shadow: 1px 1px 3px #000;
+            margin: 10px;
+        }
+
+        .input-btn:hover {
+            background-color: #d7de08;
+            color:rgb(234, 29, 29)
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(to right, #1eec36, #14c5f1)
+        }
+
+        .box {
+            width: 500px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #010332;
+            text-align: center;
+            transition: 0.25s;
+        }
+
+        .box input[type="text"],
+        .box input[type="email"],
+        .box input[type="password"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #3498db;
+            padding: 10px 10px;
+            width: 250px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s
+        }
+
+        .box h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500
+        }
+        .box input[type="text"]:focus,
+        .box input[type="password"]:focus {
+            width: 300px;
+            border-color: #2ecc71
+        }
+        .box input[type="submit"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer
+        }
+        .box input[type="checkbox"] {
+            border: 0;
+            background: green;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #2ecc71;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer
+        }
+        .box input[type="submit"]:hover {
+            background: #2ecc71
+        }
+
+        .forgot {
+            text-decoration: underline
+        }
+        a { text-decoration: none; }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <form class="box" method="POST" enctype="multipart/form-data"  style="margin-top: -350px; margin-left: -250px;">
+                        {% csrf_token %}
+                        <h1>TẠO TÀI KHOẢN NHÂN VIÊN</h1>
+                        <h3 style="color:white;"> Nhập các thông tin sau để tạo tài khoản cho nhân viên<h3>
+
+                                {% render_field userForm.firstname placeholder="Tên" %}
+                                {% render_field userForm.lastname placeholder="Họ" %}
+                                {% render_field userForm.username class="form-control" placeholder="Username" %}
+                                {% render_field userForm.emails class="form-control" placeholder="Email" %}
+                                {% render_field userForm.password class="form-control" placeholder="Mật khẩu" type="password" %}
+                                {% render_field userForm.address class="form-control" placeholder="Địa chỉ" %}
+                                {% render_field userForm.mobile class="form-control" placeholder="Số điện thoại" %}                                
+                                {% render_field userForm.profile_pic class="input-btn"%}
+
+                                <input type="submit" name="" value="Tạo tài khoản">
+                                <a href = '/dashboard/{{username}}' style="color:#14c4d1; font-size: 10px">Trở về trang chủ</a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% for message in messages %}
+        <p {% if message.tags %} class="{{ message.tags }}" id="message_container" {% endif %}>{{ message }}</p>
+        {% endfor %}
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
+</body>
+
+</html>
