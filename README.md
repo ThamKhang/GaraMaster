@@ -1,24 +1,35 @@
----
+<!-- Banner -->
+<p align="center">
+  <a href="https://www.uit.edu.vn/" title="Trường Đại học Công nghệ Thông tin" style="border: none;">
+    <img src="https://i.imgur.com/WmMnSRt.png" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+  </a>
+</p>
 
-# **CNPM_Project** 🚀  
+<h1 align="center"><b>ĐỒ ÁN NHẬP MÔN CÔNG NGHỆ PHẦN MỀM</b></h1>
 
-## **Nhóm phát triển**  
-1. **Nguyễn Trọng Nam** - Trưởng nhóm - [GitHub](https://namnguyen0903.github.io/)    
-2. **Trần Thẩm Khang** - Thành viên - [GitHub](https://thamkhang.github.io/)  
-3. **Nguyễn Hồng Phúc** - Thành viên - [GitHub](https://thongocxd.github.io/)    
-4. **Võ Văn Nhân** - Thành viên - [GitHub](https://nhanvatttranh.github.io/)    
+# THÀNH VIÊN NHÓM
 
----
+| STT    | MSSV          | Họ và Tên              | Email                   |
+| ------ |:-------------:| ----------------------:|------------------------:|
+| 1      | 20520926      | Châu Tấn               |20520926@gm.uit.edu.vn   |
+| 2      | 20522052      | Nguyễn Minh Trí        |20522052@gm.uit.edu.vn   |
+| 3      | 20520332      | Bùi Nguyễn Anh Trung   |20520332@gm.uit.edu.vn   |
+| 4      | 20520193      | Cao Văn Hùng           |20520193@gm.uit.edu.vn   |
+| 5      | 20520950      | Ngô Đức Vũ             |20520950@gm.uit.edu.vn   |
 
-## 📌 **Tên đề tài**  
-**Hệ thống quản lý gara ô tô**  
+# GIỚI THIỆU MÔN HỌC
 
-# Bảng phân công công việc dự án "Hệ thống Quản Lý Gara Ô Tô"
+* **Tên môn học:** Nhập môn công nghệ phần mềm
+* **Lớp:**  SE104.M23
+* **Giảng viên:** Đỗ Thị Thanh Tuyền
+* **Đề tài:** Quản lý Garage Ô tô.
 
-| Thành viên          | Nhiệm vụ cụ thể |
-|---------------------|----------------|
-| **Trần Thẩm Khang** | - Thiết kế và phát triển API Authentication (JWT, OAuth) <br> - Xây dựng API Quản lý xe, khách hàng <br> - Hỗ trợ thiết kế cơ sở dữ liệu <br> - Viết tài liệu API (Swagger) <br> - Kiểm thử API bằng Postman |
-| **Nguyễn Trọng Nam** | - Thiết kế giao diện UI/UX (Figma) <br> - Phát triển giao diện trang đăng nhập, quản lý tài khoản <br> - Kết nối API với giao diện <br> - Kiểm thử UI/UX, đảm bảo trải nghiệm người dùng <br> - Viết tài liệu hướng dẫn sử dụng |
-| **Nguyễn Hồng Phúc** | - Thiết kế và tối ưu cơ sở dữ liệu (ERD, Schema) <br> - Xây dựng API Quản lý kho vật tư <br> - Hỗ trợ phát triển Backend <br> - Kiểm thử hiệu suất database <br> - Tối ưu truy vấn SQL |
-| **Võ Văn Nhân** | - Điều phối tiến độ dự án, theo dõi tiến triển công việc <br> - Xây dựng API Quản lý tài chính (Hóa đơn, báo cáo) <br> - Phát triển giao diện quản lý kho vật tư, báo cáo tài chính <br> - Kiểm thử toàn hệ thống (UAT, Performance Test) <br> - Cấu hình & triển khai hệ thống |
+# HƯỚNG DẪN CÀI ĐẶT
+```
+git clone https://github.com/hungcao0402/SE104
+cd SE104
+pip install -r requirements.txt
+python manage.py runserver
+```
+
 
